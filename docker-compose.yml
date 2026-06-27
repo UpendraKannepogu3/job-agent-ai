@@ -32,6 +32,8 @@ services:
       POSTGRES_DB: jobagent_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: jobagent123
+      PGTZ: UTC
+      TZ: UTC
     ports:
       - "5432:5432"
     volumes:
